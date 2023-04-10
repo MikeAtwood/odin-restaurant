@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import loadHome from "./home";
+import loadContact from './contact';
 
 // gets id="content"
 const content = document.getElementById("content")
