@@ -33,18 +33,18 @@ function navBar() {
     })
 
     const menuBtn = document.createElement("button")
-    homeBtn.classList.add("nav-btn")
-    homeBtn.textContent = "Menu"
-    homeBtn.addEventListener("click", (e) => {
+    menuBtn.classList.add("nav-btn")
+    menuBtn.textContent = "Menu"
+    menuBtn.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(menuBtn)
         loadMenu()
     })
 
     const contactBtn = document.createElement("button")
-    homeBtn.classList.add("nav-btn")
-    homeBtn.textContent = "Contact"
-    homeBtn.addEventListener("click", (e) => {
+    contactBtn.classList.add("nav-btn")
+    contactBtn.textContent = "Contact"
+    contactBtn.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(contactBtn)
         loadContact()
@@ -56,8 +56,4 @@ function navBar() {
     return nav;
 }
 
-
-// const navBar = document.createElement('div');
-// navBar.textContent = "Menu"
-// Header.appendChild(navBar)
 
