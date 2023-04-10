@@ -1,11 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
+import loadHome from "./home";
 
-
+// gets id="content"
 const content = document.getElementById("content")
 content.appendChild(Header());
 
-
+// creates header element, appends to content
 function Header() {
 const header = document.createElement('header');
 header.classList.add("header")
@@ -20,6 +21,7 @@ header.appendChild(navBar())
 return header
 }
 
+// Creates the navbar with buttons, appends to header
 function navBar() {
     const nav = document.createElement("nav")
 
@@ -56,4 +58,26 @@ function navBar() {
     return nav;
 }
 
+function setActiveButton(button) {
+    const buttons = document.querySelectorAll(".button-nav");
+  
+    buttons.forEach((button) => {
+      if (button !== this) {
+        button.classList.remove("active");
+      }
+    });
+  
+    button.classList.add("active");
+  }
+  
+  function createMain() {
+    const main = document.createElement("main");
+    main.classList.add("main");
+    main.setAttribute("id", "main");
+    return main;
+  }
+
+  content.appendChild(createMain())
+  setActiveButton(document.querySelector(".nav-btn"))
+  loadHome()
 

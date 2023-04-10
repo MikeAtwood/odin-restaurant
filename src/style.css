@@ -11,7 +11,6 @@ body {
     color: white;
     flex-direction: column;
     align-items: center;
-    
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
@@ -37,4 +36,36 @@ body {
     cursor: pointer;
     font-size: 20px;
     margin-inline: 12px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 618px;
+    height: 545px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1px);
+    border-radius: 1%;
+}
+
+.home img {
+    width: 60%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    opacity: 95%;
+    border-radius: 50%;
+}
+
+.home p {
+    font-size: 20px;
+    color: #fff;
 }
