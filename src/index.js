@@ -3,9 +3,6 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import loadHome from "./home";
 import loadContact from './contact';
 
-// gets id="content"
-const content = document.getElementById("content")
-content.appendChild(Header());
 
 // creates header element, appends to content
 function Header() {
@@ -33,7 +30,7 @@ function navBar() {
         if (e.target.classList.contains("active")) return;
         setActiveButton(homeBtn)
         loadHome()
-    })
+    });
 
     const menuBtn = document.createElement("button")
     menuBtn.classList.add("nav-btn")
@@ -42,7 +39,7 @@ function navBar() {
         if (e.target.classList.contains("active")) return;
         setActiveButton(menuBtn)
         loadMenu()
-    })
+    });
 
     const contactBtn = document.createElement("button")
     contactBtn.classList.add("nav-btn")
@@ -51,7 +48,8 @@ function navBar() {
         if (e.target.classList.contains("active")) return;
         setActiveButton(contactBtn)
         loadContact()
-    })
+    });
+    
     nav.appendChild(homeBtn);
     nav.appendChild(menuBtn);
     nav.appendChild(contactBtn);
@@ -78,7 +76,13 @@ function setActiveButton(button) {
     return main;
   }
 
+  // gets id="content"
+  function renderPage() {
+  const content = document.getElementById("content")
+
+  content.appendChild(Header());
   content.appendChild(createMain())
   setActiveButton(document.querySelector(".nav-btn"))
   loadHome()
-
+  }
+  renderPage();

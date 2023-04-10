@@ -3,7 +3,7 @@ function contactPage() {
     contact.classList.add("contact")
 
     const contactImg = document.createElement("img")
-    contactImg.src = "../src/img.pizza-building.jpeg"
+    contactImg.src = "../src/img/pizza-building.jpeg"
     contactImg.alt = "location"
 
     contact.appendChild(contactImg);

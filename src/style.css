@@ -69,3 +69,22 @@ body {
     font-size: 20px;
     color: #fff;
 }
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 618px;
+    height: 545px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1px);
+    border-radius: 1%;
+}
+
+.contact img {
+    width: 95%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    opacity: 95%;
+}
