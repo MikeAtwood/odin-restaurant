@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: [
-    './src/index.js',
+    './src/home.js',
     'bootstrap/dist/js/bootstrap.min.js',
   ],
   output: {
