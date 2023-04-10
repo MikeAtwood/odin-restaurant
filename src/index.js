@@ -2,9 +2,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 
-
 const content = document.getElementById("content")
 content.appendChild(Header());
+
 
 function Header() {
 const header = document.createElement('header');
