@@ -9,11 +9,21 @@ body {
 .header {
     display: flex;
     color: white;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-size: 110px;
     font-family: cursive;
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
+}
+
+.restaurant-name {
+   font-size: 70px; 
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
