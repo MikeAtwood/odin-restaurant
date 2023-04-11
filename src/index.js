@@ -1,7 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import loadHome from "./home";
+import { loadHome } from "./home";
 import loadContact from './contact';
+import loadMenu from './menu';
 
 
 // creates header element, appends to content
@@ -48,8 +49,8 @@ function navBar() {
   contactBtn.addEventListener("click", (e) => {
     console.log("Clicked")
     if (e.target.classList.contains("active")) return;
-    setActiveButton(contactBtn)
-    loadContact()
+    setActiveButton(contactBtn);
+    loadContact();
   });
 
   nav.appendChild(homeBtn);
@@ -87,4 +88,4 @@ function renderPage() {
   setActiveButton(document.querySelector(".nav-btn"))
   loadHome()
 }
-renderPage();
+return renderPage;
