@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import { loadHome } from "./home";
+import loadHome from "./home";
 import loadContact from './contact';
 import loadMenu from './menu';
 
@@ -61,7 +61,7 @@ function navBar() {
 }
 
 function setActiveButton(button) {
-  const buttons = document.querySelectorAll(".button-nav");
+  const buttons = document.querySelectorAll(".nav-btn");
 
   buttons.forEach((button) => {
     if (button !== this) {
@@ -88,4 +88,4 @@ function renderPage() {
   setActiveButton(document.querySelector(".nav-btn"))
   loadHome()
 }
-return renderPage;
+renderPage();
