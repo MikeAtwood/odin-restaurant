@@ -88,3 +88,8 @@ body {
     margin-bottom: 3rem;
     opacity: 95%;
 }
+
+.contact p {
+    font-size: 20px;
+    color: #fff;
+}
