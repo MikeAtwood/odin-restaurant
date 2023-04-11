@@ -3,6 +3,7 @@ body {
     background-image: url('./img/pizza.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
 }
 
@@ -93,3 +94,41 @@ body {
     font-size: 20px;
     color: #fff;
 }
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    animation: fadeIn 1.5s;
+  }
+
+  @media (max-width: 768px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .menu-item {
+    border: none;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1px);
+    border-radius: 1%;
+  }
+
+  .menu-item h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .menu-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .menu-item img {
+    max-width: 100%;
+    height: auto;
+  }
